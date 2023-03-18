@@ -27,7 +27,7 @@ public class Principal {
         float ladoB = leitor.nextFloat();
         System.out.println("Digite o lado C do triangulo");
         float ladoC = leitor.nextFloat();
-        System.out.println(ladoA +" "+ladoB + " " + ladoC )
+        System.out.println(ladoA +" "+ladoB + " " + ladoC );
         //float soma = ladoA + ladoB;
         if(ladoA == ladoB && ladoB == ladoC) {
             System.out.println("Equilatero");
