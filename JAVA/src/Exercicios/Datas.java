@@ -7,16 +7,23 @@ para solucionar o problema.*/
 package Exercicios;
 import java.util.Scanner;
 public class Datas {
-	public static void main(String args[]) {
-		Scanner leitor = new Scanner(System.in);
-		int d;
-		String mes[] = new String[] {"Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
-		};
-			System.out.println("Digite um número inteiro relativo a um mês do ano: ");
-			d = leitor.nextInt();
-			if(d<1 || d>12) {
-				System.out.println("Inválido!");
-			}
-		
-	}
+	public static void main(String[] args) {
+        Scanner leitor = new Scanner(System.in);
+
+        // leitura do número do mês
+        System.out.print("Digite o número do mês (1 a 12): ");
+        int mes = leitor.nextInt();
+
+        // array com os nomes dos meses
+        String[] nomeMeses = {"Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
+                "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"};
+
+        // verificação e exibição do nome do mês
+        if (mes >= 1 && mes <= 12) {
+            String nomeMes = nomeMeses[mes - 1];
+            System.out.println("O mês " + mes + " é " + nomeMes + ".");
+        } else {
+            System.out.println("Inválido!");
+        }
+    } 
 }

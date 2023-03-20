@@ -6,12 +6,12 @@ import java.util.Scanner;
 
 public class ParEImpar {
     public static void main(String[] argss){
-        Scanner ent = new Scanner(System.in);
+        Scanner leitor = new Scanner(System.in);
         int num, contPar = 0, contImpar = 0;
         
         for(int i = 1; i <= 5; i++){
             System.out.println("Digite o " + i + "º número");
-            num = ent.nextInt();
+            num = leitor.nextInt();
             
             if(num % 2 == 0){
                 contPar++;
