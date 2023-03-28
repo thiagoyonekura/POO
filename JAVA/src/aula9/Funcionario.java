@@ -54,7 +54,7 @@ public class Funcionario {
 	
 	public double calculaPl() {
 		double pl = 0.0;
-		if(this.salarioBase <= 2500.00) {
+		if(this.salarioBase > 0.0 && this.salarioBase <= 2500.00)  {
 			pl = this.salarioBase * 0.1;
 		}else if(this.salarioBase <= 3500) {
 			pl = this.salarioBase * 0.15;
